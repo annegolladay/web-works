@@ -37,6 +37,7 @@ app.post('/entry', function(req, res) {
         date: req.body.date, 
         content: req.body.content
     }
+    console.log(req.body)
     entries.push(newEntry)
     globalId++
     res.status(200).send(entries)
